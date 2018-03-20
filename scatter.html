@@ -1,16 +1,39 @@
 <!DOCTYPE HTML>
 <html>
-
-	<head>
-		<title>SVG </title>
-	</head>
-
-	<body>
-		<p style = "margin-left : 0 px"> Ice Cream Sales ($) </p>
-		<svg style = "margin-left: 100px" id = "s" xmlns= " https://www.w3.org/2000/svg" , width = "500" , height = "500"></svg>
-		<p> Temperature (C)</p>
-		<script src="https://d3js.org/d3.v4.min.js"></script>
-		<script src="draw.js"></script>
-		
-	</body>
+  
+  <head>
+    <title>SVG </title>
+  </head>
+  <style>
+    .h{
+    position:absolute;
+    top:40%;
+    left:0%;
+    transform:rotate(-90deg);
+    }
+  </style>
+  
+  <body>
+    <h1 align="center">Ice Cream Sales vs. Temperature</h1>
+    <svg style="border-left-style: solid; border-bottom-style: solid;  display: block; margin: auto" id = "s" xmlns= " https://www.w3.org/2000/svg" , width = "700" , height = "600">
+    <text x="0" y="520">100</text>
+    <text x="0" y="420">200</text>
+    <text x="0" y="320">300</text>
+    <text x="0" y="220">400</text>
+    <text x="0" y="120">500</text>
+    <text x="0" y="20">600</text>
+    <text x="100" y="600">12</text>
+    <text x="200" y="600">14</text>
+    <text x="300" y="600">16</text>
+    <text x="400" y="600">18</text>
+    <text x="500" y="600">20</text>
+    <text x="600" y="600">22</text>
+    <text x="700" y="600">24</text>
+    </svg>    
+    <h2 align="center">Temperature (C)</h2>
+    <h2 class="h">Ice Cream Sales (Dollars)</h2>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="draw.js"></script>
+    
+  </body>
 </html>

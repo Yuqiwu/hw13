@@ -17,7 +17,7 @@ var info =  [[14,215],[ 16,325] ,[11,185],[ 15,332],[ 18,406], [ 22,522] ,[19,41
 var plot = function(){
     var container = d3.select("svg");
     var points = container.selectAll("circle"). data(info).enter().append("circle");
-    points.attr("cx" , function(d){return d[0]*10;});
+    points.attr("cx" , function(d){return 100*((d[0]-12)/2) + 100;});
     points.attr("cy", function(d) {return  500 - d[1];});
     points.attr("r" , 5);
     points.attr("fill" , "black");
